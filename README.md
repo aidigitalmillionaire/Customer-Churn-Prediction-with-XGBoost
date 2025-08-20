@@ -101,4 +101,7 @@ Customer churn is a critical business problem that impacts long-term revenue. Th
 - Feature importance analysis for business insights   
 
 # Business Impact:  
-By predicting churn and identifying its drivers, businesses can take **proactive retention measures**, lower churn rates, and increase **customer lifetime value (CLV)**.  
+By predicting churn and identifying its drivers, businesses can take **proactive retention measures**, lower churn rates, and increase **customer lifetime value (CLV)**.
+
+
+
