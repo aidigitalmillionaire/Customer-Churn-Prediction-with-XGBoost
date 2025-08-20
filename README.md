@@ -86,7 +86,6 @@ Business can reduce churn by offering retention plans for customers with short t
 
 Create `docs/DESCRIPTION.md`:  
 
-```markdown
 # Project Description: Customer Churn Prediction with XGBoost  
 
 Customer churn is a critical business problem that impacts long-term revenue. This project demonstrates how to use **XGBoost**, a powerful gradient boosting algorithm, to predict churn and understand the factors that drive it.  
@@ -103,5 +102,83 @@ Customer churn is a critical business problem that impacts long-term revenue. Th
 # Business Impact:  
 By predicting churn and identifying its drivers, businesses can take **proactive retention measures**, lower churn rates, and increase **customer lifetime value (CLV)**.
 
+# 🔄 Customer Churn Prediction with XGBoost  
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_mcjY795SR2O582OTgxMZ-YP5BRxEixd?usp=sharing)
+
+
+# **7. Recommended Notebook Sections (customer_churn_xgboost.ipynb)**
+
+# 📓 Customer Churn Prediction with XGBoost
+
+## 1. Introduction
+- Business problem: predicting customer churn.
+- Why churn prediction matters.
+
+## 2. Import Libraries
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score
+import xgboost as xgb
+```
+
+## 3. Load Dataset
+```python
+df = pd.read_csv("Telco-Customer-Churn.csv")
+df.head()
+```
+
+## 4. Exploratory Data Analysis (EDA)
+
+Missing values
+
+Categorical vs numerical
+
+Correlation heatmap
+
+Churn distribution
+
+## 5. Feature Engineering
+
+Encoding categorical variables
+
+Scaling numerical features
+
+Train-test split
+
+## 6. Model Training with XGBoost
+```python
+model = xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss')
+model.fit(X_train, y_train)
+```
+
+## 7. Model Evaluation
+
+Accuracy, Precision, Recall, F1-score
+
+ROC-AUC curve
+
+Confusion matrix
+
+## 8. Feature Importance
+```python
+xgb.plot_importance(model)
+plt.show()
+```
+
+## 9. Conclusion
+
+Key churn drivers
+
+Business implications
+
+---
+
+## **4. Update Repo Structure After Adding Notebook**  
+
+✅ Now your repo will look polished, and recruiters/colleagues can run your model instantly on Colab.  
 
